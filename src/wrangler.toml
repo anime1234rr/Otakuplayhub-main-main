@@ -1,0 +1,9 @@
+name = "Otakuplayhub"
+type = "javascript"  
+
+[build]
+  command = "npm run build"
+  cwd = "./dist"  # Asegúrate de que esté apuntando al directorio correcto donde se genera tu build
+
+[env.production]
+  main = "./dist/worker.js"  # Apunta al archivo correcto generado en el proceso de build

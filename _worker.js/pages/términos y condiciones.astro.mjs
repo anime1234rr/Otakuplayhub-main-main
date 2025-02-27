@@ -1,0 +1,22 @@
+globalThis.process ??= {}; globalThis.process.env ??= {};
+import { e as createComponent, r as renderTemplate, i as renderComponent, m as maybeRenderHead } from '../chunks/astro/server_a_wdovWq.mjs';
+import { $ as $$Layout } from '../chunks/Layout_Cie12lse.mjs';
+export { renderers } from '../renderers.mjs';
+
+const $$TrminosYCondiciones = createComponent(($$result, $$props, $$slots) => {
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "T\xE9rminos y Condiciones - OtakuPlayhub" }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<div class="terms-conditions"> <h1>📜 Términos y Condiciones</h1> <div class="section"> <h2>1. Aceptación de los Términos ✅</h2> <p>Al acceder o utilizar este sitio web, aceptas cumplir con los términos y condiciones establecidos en este documento. Si no estás de acuerdo con estos términos, te pedimos que no uses el sitio web. 🚫</p> </div> <div class="section"> <h2>2. Uso del Sitio Web 🌐</h2> <p>El acceso a este sitio web es para fines personales y no comerciales. Te comprometes a no utilizar el sitio para actividades ilícitas, ilegales o que violen los derechos de otros usuarios. ⚖️</p> </div> <div class="section"> <h2>3. Propiedad Intelectual 💡</h2> <p>Todo el contenido del sitio web, incluyendo, pero no limitado a, texto, imágenes, logotipos, videos y software, está protegido por derechos de propiedad intelectual y es propiedad exclusiva de OtakuPlayHub o de sus respectivos propietarios. 🔒</p> </div> <div class="section"> <h2>4. Modificaciones 🔧</h2> <p>Nos reservamos el derecho de modificar, suspender o descontinuar el sitio web en cualquier momento, sin previo aviso. También podemos cambiar estos términos y condiciones en cualquier momento, y la versión actual será publicada en esta misma página. 🔄</p> </div> <div class="section"> <h2>5. Limitación de Responsabilidad ⚠️</h2> <p>No nos hacemos responsables de cualquier daño directo, indirecto o consecuente que pueda surgir del uso del sitio web. El sitio web se proporciona "tal cual", sin garantías de ningún tipo. ⚖️❗</p> </div> <div class="section"> <h2>6. Enlaces a Terceros 🔗</h2> <p>Este sitio puede contener enlaces a otros sitios web que no son controlados por OtakuPlayHub. No somos responsables de los contenidos o prácticas de privacidad de esos sitios. 🌍</p> </div> </div> ` })}`;
+}, "C:/Users/Usuario/Downloads/Nueva carpeta (25)/Otakuplayhub-main-main/src/pages/T\xE9rminos y Condiciones.astro", void 0);
+
+const $$file = "C:/Users/Usuario/Downloads/Nueva carpeta (25)/Otakuplayhub-main-main/src/pages/Términos y Condiciones.astro";
+const $$url = "/Términos y Condiciones";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: $$TrminosYCondiciones,
+  file: $$file,
+  url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const page = () => _page;
+
+export { page };

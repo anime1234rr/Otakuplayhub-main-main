@@ -1,0 +1,31 @@
+---
+export async function getStaticPaths({ paginate }: { paginate: (items: any[], options: { pageSize: number }) => any }) {
+  const astronautPages = [{
+    astronaut: 'Neil Armstrong',
+  }, {
+    astronaut: 'Buzz Aldrin',
+  }, {
+    astronaut: 'Sally Ride',
+  }, {
+    astronaut: 'John Glenn',
+  }];
+  // Genera páginas para nuestro array de astronautas, con 2 elementos por página
+  return paginate(astronautPages, { pageSize: 2 });
+}
+// Todos los datos paginados se pasan en la prop "page"
+interface PageProps {
+  page: {
+    currentPage: number;
+    data: { astronaut: string }[];
+  };
+}
+
+const { page } = Astro.props as PageProps;
+---
+
+<!--Muestra el número de página actual. ¡También puedes utilizar Astro.params.page!-->
+<h1>Página {page.currentPage}</h1>
+<ul>
+  <!--Enumera el array con información sobre astronautas-->
+  {page.data.map(({ astronaut }) => <li>{astronaut}</li>)}
+</ul>

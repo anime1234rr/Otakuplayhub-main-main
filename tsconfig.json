@@ -8,12 +8,12 @@
     "dist"
   ],
   "compilerOptions": {
-    "jsx": "react",  // Esto asegura que Astro soporte JSX con React
-    "strict": true,  // Habilita el modo estricto para reducir errores de tipo
-    "baseUrl": ".",   // Es necesario para usar rutas relativas
+    "jsx": "react",  
+    "strict": true,  
+    "baseUrl": ".",  
     "paths": {
       "@components/*": ["src/components/*"], 
-      "@layout/*": ["src/layout/*"]  // Configura el alias para que puedas importar componentes de manera más limpia
+      "@layout/*": ["src/layout/*"]  
     }
   }
 }

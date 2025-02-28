@@ -1,20 +1,23 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
-import cloudflare from '@astrojs/cloudflare';  
-import tailwindcss from '@tailwindcss/vite';  
+import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
+
  
-  vite: {
-    plugins: [tailwindcss()],  
+
+  redirects: {
+    '/old-page': '/new-page'
   },
 
+  base: '/https://github.com/anime1234rr/Otakuplayhub-main-main/',
 
- adapter: cloudflare({
-  imageService: 'cloudflare'
-}),
+  build: {
+    
+  },
+  vite: {
+    plugins: [tailwindcss()],
+  },
 
-
-output: 'server', 
 });

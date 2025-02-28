@@ -1,0 +1,12 @@
+---
+export function getStaticPaths() {
+  return [
+    {params: {path: 'uno/dos/tres'}},
+    {params: {path: 'cuatro'}},
+    {params: {path: undefined }}
+  ]
+}
+
+const { path } = Astro.params;
+---
+...
